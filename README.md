@@ -19,3 +19,4 @@ Si deseas mostrar un mayor conocimiento y habilidades, puedes considerar impleme
 - Proporcionar al usuario la opción de generar múltiples contraseñas seguras a la vez.
 - Mejorar la interfaz de usuario creando un doc. html interactuando con el DOM y con estilos CSS básicos para que sea más atractiva y amigable.# password-generator
 # password-generator
+# password-generator
