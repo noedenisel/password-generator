@@ -1,4 +1,4 @@
-# GENERATOR Password in JS
+# Password- Generator  JS
 
 ## Generador de Contraseñas Seguras
 
@@ -18,5 +18,4 @@ Si deseas mostrar un mayor conocimiento y habilidades, puedes considerar impleme
 - Validar la longitud ingresada por el usuario para asegurarse de que sea un número válido y proporcionar un mensaje de error si no lo es.
 - Proporcionar al usuario la opción de generar múltiples contraseñas seguras a la vez.
 - Mejorar la interfaz de usuario creando un doc. html interactuando con el DOM y con estilos CSS básicos para que sea más atractiva y amigable.# password-generator
-# password-generator
-# password-generator
+
