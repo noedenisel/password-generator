@@ -3,24 +3,67 @@
   <head>
     <title>Generator Password</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="title.css">
+    <link rel="stylesheet" href="footer.css">
+    
     <script src="./generator_password.js" async></script>
   </head>
   <body>
-    <h1>Generator Password</h1>
-    <div class="container">
-      <div class="input-container">
-        <label for="length">Length:</label>
-        <input type="number" id="num_amount" min="1" value="8" />
+    <header class="input-container">
+      <span class="bash-text">
+        <span class="user">password</span><span class="vm">@generator</span>:<span class="char">~</span>$
+        <input class="input" placeholder="generate-pass/" type="text">
+      </span>
+      <span class="bash-text">
+        <span class="user">designed</span><span class="vm">@by</span>:<span class="char">~</span>$
+        <input class="input" placeholder="@noedenisel/" type="text">
+      </span>
+      
+    </header>
+    <main>
+      <div class="container">
+        <p>Para generar una contraseña, seleccione la cantidad de caracteres que desee que tenga:</p>
+        <div class="length-container">
+          <label for="length">Number of characters:</label>
+          <input type="number" id="num_amount" min="1" value="8" />
+        </div>
+        <br>
+        <button class="ui-btn" id="button_generator">
+          <span>
+            Generate
+          </span>
+        </button>
+        <br>
       </div>
-      <button class="button" id="button_generator">Generate</button>
-      <h2>Contraseña generada: </h2>
-      <h3 id="password"></h3>
-    </div>
-    <div>
-      <h3>Historial de contraseñas</h3>
-      <ul class="password-list" id="passwordList"></ul>
-    </div>
+      <div class="card">
+        <div class="titlebar">
+          <span class="buttons">
+          <button class="minimize">
+            <svg x="0px" y="0px" viewBox="0 0 10.2 1"><rect x="0" y="50%" width="10.2" height="1"></rect></svg>
+          </button>
+          <button class="maximize">
+            <svg viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path></svg>
+          </button>
+          <button class="close">
+            <svg viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"></polygon></svg>
+          </button>
+          </span>
+        </div>
+        <div class="cppcode">
+          <pre id="pre"><code><span class="s3">ultima</span> <span class="s4">password</span> <span class="operator">=</span> <span id="password"></span><span class="sc">;</span>
+  
+    <span class="s1">#Contraseñas</span> <span class="s2">&lt;Historial&gt;</span>
+  
+    <span class="s3">contraseñas</span> <span class="s2">generadas()</span> <span class="curlies">{</span>
+        <span class="s3">paswword</span> <span class="s4">anterior</span> <span class="operator">=</span > <span class="curlies">[</span><ul id="passwordList"></ul>
+          <span class="curlies">]</span>
+          </code></pre>
+        </div>
+      </div>
+    </main>
+   
     
-
   </body>
 </html>

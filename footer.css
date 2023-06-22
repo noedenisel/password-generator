@@ -1,0 +1,32 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    background-color: #0F172A;
+    padding: 10px 15px;
+    gap: 5px;
+    border-radius: 20px;
+  }
+  
+  .footer-container .bash-text {
+    font-size: .8rem;
+    color: white;
+  }
+  
+  .footer-container .bash-text .user {
+    color: #E879F9;
+  }
+  
+  .footer-container .bash-text .vm {
+    color: #2DD4BF;
+  }
+  
+  .footer-container .bash-text .char {
+    color: #A78BFA;
+  }
+  
+  .footer-container input[type=text].input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+  }

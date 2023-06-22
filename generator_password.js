@@ -43,21 +43,22 @@ function generatePasswords() {
           selectRandomTypes[Math.floor(Math.random() * selectRandomTypes.length)];
       //? De este array toma la posicion
       //?                  Ayuda a redondear * la posicion hasta la que quiero, va a generar un numero x del array
-        orderCharacterTypesResult.push(selectChar);
-      //? Pushea los selectores
-        generatedCharacterTypes[selectChar] = true;
+        orderCharacterTypesResult.push(selectChar); //? Pushea los selectores
+      
+        generatedCharacterTypes[selectChar] = true; //? valida que avance cuando tenga como minimo un caracter de cada uno
   
         if (
-          numRef === 1 &&
-          (!generatedCharacterTypes.lowercase ||
+          numRef === 1 && // ? para "agarrarlo" en la ultima vuelta
+          ( !generatedCharacterTypes.lowercase ||
             !generatedCharacterTypes.uppercase ||
             !generatedCharacterTypes.number ||
-            !generatedCharacterTypes.special)
+            !generatedCharacterTypes.special
+          ) // ? si NO es true, avanza
         ) {
           numRef = numAmount;
           orderCharacterTypesResult = [];
           for (const key in generatedCharacterTypes) {
-            generatedCharacterTypes[key] = false;
+            generatedCharacterTypes[key] = false; //? convierto a todas otra vez en false
           }
         } else {
           numRef--; //? para que se salga de ahi
