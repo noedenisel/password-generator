@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generator Password</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./generator_password.js" async></script>
+  </head>
+  <body>
+    <h1>Generator Password</h1>
+    <div class="container">
+      <div class="input-container">
+        <label for="length">Length:</label>
+        <input type="number" id="num_amount" min="1" value="8" />
+      </div>
+      <button class="button" id="button_generator">Generate</button>
+      <h2>Contraseña generada: </h2>
+      <h3 id="password"></h3>
+    </div>
+    <div>
+      <h3>Historial de contraseñas</h3>
+      <ul class="password-list" id="passwordList"></ul>
+    </div>
+    
+
+  </body>
+</html>
